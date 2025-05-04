@@ -1,0 +1,69 @@
+/* Reset basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #d3f3ff, #e6e4ff);
+}
+
+.counter-app {
+  background: #fff;
+  padding: 40px 50px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.counter-app:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+
+h1 {
+  color: #5e60ce;
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+}
+
+#count-display {
+  font-size: 64px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #3c096c;
+  transition: color 0.3s ease;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.button-group button {
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  background-color: #7b2cbf;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.button-group button:hover {
+  background-color: #5a189a;
+  transform: translateY(-2px);
+}
+
+.button-group button:active {
+  background-color: #3c096c;
+  transform: scale(0.98);
+}
