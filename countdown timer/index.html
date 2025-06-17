@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🕒 Countdown Timer</h1>
+      <p class="subtitle">Enter seconds to start the countdown</p>
+
+      <input type="number" id="secondsInput" placeholder="e.g. 30" min="1" />
+      <button id="startBtn">Start Countdown</button>
+
+      <div id="displayArea">
+        <h2 id="countdownDisplay">00</h2>
+        <p id="doneMessage"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
