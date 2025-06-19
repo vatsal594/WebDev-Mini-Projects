@@ -1,21 +1,18 @@
-const quotes = [
-  "The only way to do great work is to love what you do.",
-  "Believe you can and you're halfway there.",
-  "The future belongs to those who believe in the beauty of their dreams.",
-  "It is during our darkest moments that we must focus to see the light.",
-  "The best way to predict the future is to create it.",
-  "Success is not final, failure is not fatal: it is the courage to continue that counts.",
-  "In the middle of every difficulty lies opportunity.",
-  "The only impossible journey is the one you never begin.",
-  "What you get by achieving your goals is not as important as what you become by achieving your goals.",
-  "Twenty years from now you will be more disappointed by the things that you didn't do than by the ones you did do.",
-];
+function showTime() {
+  const now = new Date();
 
-let quote = document.getElementById("quote");
-let button = document.getElementById("btn");
+  let hours = now.getHours();
+  let mins = now.getMinutes();
+  let secs = now.getSeconds();
 
-button.addEventListener("click", function () {
-  let randomIndex = Math.floor(Math.random() * quotes.length);
+  // Add 0 in front of single digits
+  hours = hours < 10 ? "0" + hours : hours;
+  mins = mins < 10 ? "0" + mins : mins;
+  secs = secs < 10 ? "0" + secs : secs;
 
-  quote.innerText = quotes[randomIndex];
-});
+  document.getElementById("clock").innerText = `${hours}:${mins}:${secs}`;
+  document.getElementById("date").innerText = now.toDateString();
+}
+
+setInterval(showTime, 1000);
+showTime(); 
