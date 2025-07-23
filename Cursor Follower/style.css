@@ -1,0 +1,26 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+
+  overflow: hidden;
+}
+
+/* Glowing follower circle */
+.follower {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: #00ffd5;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: top 0.07s ease-out, left 0.07s ease-out;
+  box-shadow: 0 0 8px #00ffd5, 0 0 15px #00ffd5, 0 0 30px #00ffd5;
+}

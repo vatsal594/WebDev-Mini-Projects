@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DevTools Resources Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🛠️ DevTools Resources Hub</h1>
+      <div class="top-bar">
+        <input type="text" id="search" placeholder="Search resources..." />
+        <button id="toggle-theme">🌙</button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Each category -->
+      <section class="category" data-category="Icons">
+        <h2>🎨 Icons</h2>
+        <div class="resources">
+          <div class="resource-card">
+            <h3>Font Awesome</h3>
+            <p>Popular icon library for web projects.</p>
+            <div class="link-box">
+              <span>https://fontawesome.com</span>
+              <button onclick="copyToClipboard('https://fontawesome.com', this)">📋</button>
+            </div>
+          </div>
+          <div class="resource-card">
+            <h3>Heroicons</h3>
+            <p>Hand-crafted SVG icons by Tailwind team.</p>
+            <div class="link-box">
+              <span>https://heroicons.com</span>
+              <button onclick="copyToClipboard('https://heroicons.com', this)">📋</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="category" data-category="Fonts">
+        <h2>🅰️ Fonts</h2>
+        <div class="resources">
+          <div class="resource-card">
+            <h3>Google Fonts</h3>
+            <p>Free web fonts by Google.</p>
+            <div class="link-box">
+              <span>https://fonts.google.com</span>
+              <button onclick="copyToClipboard('https://fonts.google.com', this)">📋</button>
+            </div>
+          </div>
+          <div class="resource-card">
+            <h3>FontShare</h3>
+            <p>Free fonts from Indian Type Foundry.</p>
+            <div class="link-box">
+              <span>https://www.fontshare.com</span>
+              <button onclick="copyToClipboard('https://www.fontshare.com', this)">📋</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="category" data-category="APIs">
+        <h2>🔌 APIs</h2>
+        <div class="resources">
+          <div class="resource-card">
+            <h3>Unsplash API</h3>
+            <p>Free photo API.</p>
+            <div class="link-box">
+              <span>https://unsplash.com/developers</span>
+              <button onclick="copyToClipboard('https://unsplash.com/developers', this)">📋</button>
+            </div>
+          </div>
+          <div class="resource-card">
+            <h3>OpenWeatherMap</h3>
+            <p>Global weather data API.</p>
+            <div class="link-box">
+              <span>https://openweathermap.org/api</span>
+              <button onclick="copyToClipboard('https://openweathermap.org/api', this)">📋</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="category" data-category="Docs">
+        <h2>📚 Docs</h2>
+        <div class="resources">
+          <div class="resource-card">
+            <h3>MDN Web Docs</h3>
+            <p>Official docs for web developers.</p>
+            <div class="link-box">
+              <span>https://developer.mozilla.org</span>
+              <button onclick="copyToClipboard('https://developer.mozilla.org', this)">📋</button>
+            </div>
+          </div>
+          <div class="resource-card">
+            <h3>W3Schools</h3>
+            <p>Beginner-friendly web tutorials.</p>
+            <div class="link-box">
+              <span>https://www.w3schools.com</span>
+              <button onclick="copyToClipboard('https://www.w3schools.com', this)">📋</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="category" data-category="Templates">
+        <h2>📁 Templates</h2>
+        <div class="resources">
+          <div class="resource-card">
+            <h3>HTML5 UP</h3>
+            <p>Responsive HTML5/CSS3 templates.</p>
+            <div class="link-box">
+              <span>https://html5up.net</span>
+              <button onclick="copyToClipboard('https://html5up.net', this)">📋</button>
+            </div>
+          </div>
+          <div class="resource-card">
+            <h3>BootstrapMade</h3>
+            <p>Bootstrap templates & UI kits.</p>
+            <div class="link-box">
+              <span>https://bootstrapmade.com</span>
+              <button onclick="copyToClipboard('https://bootstrapmade.com', this)">📋</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div id="toast">Copied to clipboard!</div>
+  <script src="script.js"></script>
+</body>
+</html>
